@@ -1,0 +1,44 @@
+.{
+    padding: 1px;
+    margin: 1px;
+}
+
+.Container {
+    display: grid;
+    grid-template:
+    "header header  header" 100px
+    "left-side-bar  main  right-side-bar" 50px /
+    1fr  2fr 1fr;
+
+}
+
+.logo{
+  
+
+}
+
+.header{
+    grid-area: header;
+    min-height: 100px;
+    background-color: bisque;
+
+}
+
+.Left-side-bar{
+
+}
+
+.main{
+    grid-area: main;
+    min-height: 100px;
+    background-color: bisque;
+
+
+}
+
+.right-side-bar{
+    grid-area: right-side-bar;
+    min-height: 100px;
+    background-color: bisque;
+
+}
