@@ -5,7 +5,7 @@
     "left-side-bar  main  right-side-bar" 1fr /
     1fr 2fr 1fr; */
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 1fr 20fr;
+  grid-template-rows: 20% 80%;
   grid-template-areas:
     "header header header"
     "left mid right";
@@ -24,9 +24,11 @@
   border: 2px red solid;
 }
 
-.Searchbar{
-  border: peru;
-
+.Searchbar {
+  border: 2px grey solid;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px;
 }
 .right-header {
   border: 2px red solid;
@@ -47,49 +49,44 @@
   border: 1px solid black;
 }
 
-.quickset{
+.quickset {
   grid-area: header;
   border: 1px solid black;
   display: grid;
   height: 30px;
-  grid-template-rows: 1fr 5fr 1fr ;
+  grid-template-rows: 1fr 5fr 1fr;
 }
 
-.seeallset{
+.seeallset {
   grid-area: header;
   border: 1px solid black;
   display: grid;
   height: 30px;
-  grid-template-rows: 1fr 5fr 1fr ;
+  grid-template-rows: 1fr 5fr 1fr;
 }
 
-.density{
-
+.density {
   grid-area: header;
   border: 1px solid black;
   display: grid;
   height: 70px;
-  grid-template-rows: 1fr 5fr 1fr ;
-
+  grid-template-rows: 1fr 5fr 1fr;
 }
 
-
-.thems{
+.thems {
   grid-area: header;
   border: 1px solid black;
   display: grid;
-  grid-template-rows: 1fr 5fr 1fr ;
-  grid-template-columns: 2fr 2fr;
-  height:70px;
-
-}
-
-.inbox{
-  grid-area: header;
-  border: 1px solid black;
-  display: grid;
-  grid-template-rows: 1fr 5fr 1fr ;
+  grid-template-rows: 1fr 5fr 1fr;
   grid-template-columns: 2fr 2fr;
   height: 70px;
+}
 
+.inbox {
+  grid-area: header;
+  border: 1px solid black;
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-columns: 2fr 2fr;
+  height: 70px;
 }
