@@ -6,7 +6,7 @@
 .Container {
     display: grid;
     grid-template:
-    "header header  header" 100px
+    "Logo  header  header" 100px
     "left-side-bar  main  right-side-bar" 50px /
     1fr  2fr 1fr;
 
