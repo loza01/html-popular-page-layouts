@@ -23,6 +23,11 @@
 .middle-header {
   border: 2px red solid;
 }
+
+.Searchbar{
+  border: peru;
+
+}
 .right-header {
   border: 2px red solid;
 }
@@ -40,4 +45,51 @@
 .right-side-bar {
   grid-area: right;
   border: 1px solid black;
+}
+
+.quickset{
+  grid-area: header;
+  border: 1px solid black;
+  display: grid;
+  height: 30px;
+  grid-template-rows: 1fr 5fr 1fr ;
+}
+
+.seeallset{
+  grid-area: header;
+  border: 1px solid black;
+  display: grid;
+  height: 30px;
+  grid-template-rows: 1fr 5fr 1fr ;
+}
+
+.density{
+
+  grid-area: header;
+  border: 1px solid black;
+  display: grid;
+  height: 70px;
+  grid-template-rows: 1fr 5fr 1fr ;
+
+}
+
+
+.thems{
+  grid-area: header;
+  border: 1px solid black;
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr ;
+  grid-template-columns: 2fr 2fr;
+  height:70px;
+
+}
+
+.inbox{
+  grid-area: header;
+  border: 1px solid black;
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr ;
+  grid-template-columns: 2fr 2fr;
+  height: 70px;
+
 }
