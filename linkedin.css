@@ -1,0 +1,141 @@
+.container {
+  display: grid;
+  grid-template:
+    "searchBar  searchBar searchBar" 50px
+    "UserStuff  feed      news" 800px /
+    200px 600px 250px;
+  gap: 10px;
+  background-color: beige;
+}
+.header {
+  grid-area: searchBar;
+  background-color: whitesmoke;
+  border: solid 2px red;
+}
+.left {
+  grid-area: UserStuff;
+  background-color: whitesmoke;
+  border: solid 2px red;
+  display: grid;
+  grid-template-rows: 2fr 1fr 2fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "nick"
+    "boolean"
+    "trend";
+  padding: 15px;
+  gap: 15px;
+}
+.nicprofile {
+  grid-area: nick;
+  border: 1px black solid;
+  background-color: lightskyblue;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "profile"
+    "view"
+    "pro"
+    "itm";
+}
+.profile {
+  grid-area: profile;
+  background-color: lightskyblue;
+  border: 1px black solid;
+}
+.viewnumber {
+  border: 1px black solid;
+  grid-area: view;
+  background-color: lightskyblue;
+  grid-template-columns: 1fr;
+}
+.prom {
+  border: 1px black solid;
+  grid-template-columns: 1fr;
+  background-color: lightskyblue;
+  grid-area: pro;
+}
+.myitems {
+  border: 1px black solid;
+  grid-template-columns: 1fr;
+  grid-area: itm;
+}
+.booleanprofile {
+  grid-area: boolean;
+  grid-template-columns: 1fr;
+  background-color: lightskyblue;
+  border: 1px solid black;
+}
+.trending {
+  grid-area: trend;
+  grid-template-columns: 1fr;
+  background-color: lightskyblue;
+  border: 1px solid black;
+}
+
+.middle {
+  grid-area: feed;
+  background-color: whitesmoke;
+  border: solid 2px red;
+  display: grid;
+  grid-template-rows: 40px 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "topfeed"
+    "midprofile"
+    "lowprofile";
+  padding: 15px;
+  gap: 15px;
+}
+.topfeed {
+  grid-area: topfeed;
+}
+
+.options-etc {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr 1fr;
+}
+.profiles {
+  display: grid;
+  grid-template: 300px 100px / 1fr;
+  border: solid 2px red;
+  display: grid;
+}
+#midprofile {
+  grid-area: midprofile;
+  height: 500px;
+  border: solid 1px red;
+}
+#lowmidprofile {
+  grid-area: lowprofile;
+  border: solid 1px red;
+  height: 100px;
+}
+
+.right {
+  grid-area: news;
+  background-color: whitesmoke;
+  border: solid 2px red;
+  display: grid;
+  grid-template-rows: 2fr 1fr 2fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "news"
+    "viewedcourses"
+    "feed";
+  padding: 15px;
+  gap: 15px;
+}
+.linkedinnews {
+  grid-area: news;
+  border: 1px black solid;
+}
+.mostviewed {
+  grid-area: viewedcourses;
+  border: 1px black solid;
+}
+.addfeed {
+  grid-area: feed;
+  border: 1px black solid;
+}
