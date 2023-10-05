@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100%;
+
+  display: grid;
+  grid-template:
+    "channels friends headding " 45px
+    "channels friends  messages" 1fr
+    "channels friends type-here" 50px/
+    75px 140px 1fr;
+}
+
+.channels {
+  grid-area: channels;
+  background-color: brown;
+}
+.friends {
+  grid-area: friends;
+  background-color: rgba(165, 128, 42, 0.52);
+}
+
+.headding {
+  grid-area: headding;
+  background-color: pink;
+}
+
+.messages {
+  grid-area: messages;
+  background-color: rgba(0, 0, 255, 0.418);
+}
+
+.type-here {
+  grid-area: type-here;
+  background-color: rgba(0, 128, 0, 0.502);
+}
